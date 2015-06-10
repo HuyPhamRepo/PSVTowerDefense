@@ -1,0 +1,41 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HybridActionTD\Framework\Framework Objects\QuadTreeNode.cs">
+    <Files>
+      <File FileName="HybridActionTD\Screens\FunctionScreens\WinScreen.cs" Line="1" Column="1" />
+      <File FileName="HybridActionTD\Screens\LoadScreen.cs" Line="52" Column="24" />
+      <File FileName="HybridActionTD\Framework\Managers\ProjectileManager.cs" Line="13" Column="16" />
+      <File FileName="HybridActionTD\Framework\Managers\TowerManager.cs" Line="51" Column="12" />
+      <File FileName="HybridActionTD\Screens\MenuScreen.cs" Line="57" Column="28" />
+      <File FileName="HybridActionTD\Framework\Managers\EnemyManager.cs" Line="107" Column="11" />
+      <File FileName="HybridActionTD\Objects\Kinetic Objects\Game Creatures\MountainGod\MountainGod.cs" Line="45" Column="44" />
+      <File FileName="HybridActionTD\Screens\GameScreen.cs" Line="176" Column="4" />
+      <File FileName="HybridActionTD\Framework\Managers\TreeManager.cs" Line="1" Column="1" />
+      <File FileName="HybridActionTD\Framework\Framework Objects\QuadTreeNode.cs" Line="13" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="HybridActionTD" expanded="True">
+            <Node name="Framework" expanded="True">
+              <Node name="Framework Objects" expanded="True">
+                <Node name="QuadTreeNode.cs" selected="True" />
+              </Node>
+              <Node name="Managers" expanded="True" />
+            </Node>
+            <Node name="Objects" expanded="True" />
+            <Node name="Screens" expanded="True">
+              <Node name="FunctionScreens" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="HybridActionTD\Screens\GameScreen.cs" line="182" offsetX="423" offsetY="3620" expression="touches" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79EE145D-3360-43DF-8506-23725239B85B}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HybridActionTD</RootNamespace>
+    <AssemblyName>HybridActionTD</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.PlayStation.Core" />
+    <Reference Include="Sce.PlayStation.HighLevel.GameEngine2D" />
+    <Reference Include="Sce.PlayStation.HighLevel.UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppMain.cs" />
+    <Compile Include="Framework\CommonHelper.cs" />
+    <Compile Include="Screens\GameScreen.cs" />
+    <Compile Include="Objects\GameObject.cs" />
+    <Compile Include="Objects\Static Objects\PlayCell.cs" />
+    <Compile Include="Framework\EnumClasses.cs" />
+    <Compile Include="Framework\EnemyWave\EnemyWave.cs" />
+    <Compile Include="Framework\FPS.cs" />
+    <Compile Include="Objects\Kinetic Objects\Game Creatures\Enemies\BasicEnemy.cs" />
+    <Compile Include="Objects\Kinetic Objects\Game Creatures\BasicCreature.cs" />
+    <Compile Include="Framework\Managers\EnemyManager.cs" />
+    <Compile Include="Objects\Kinetic Objects\Towers\BasicTower.cs" />
+    <Compile Include="Objects\Kinetic Objects\Projectiles\BasicProjectile.cs" />
+    <Compile Include="Framework\Managers\ProjectileManager.cs" />
+    <Compile Include="Framework\Managers\TowerManager.cs" />
+    <Compile Include="Objects\Kinetic Objects\Game Creatures\MountainGod\MountainGod.cs" />
+    <Compile Include="Objects\Static Objects\Spells\BasicSpell.cs" />
+    <Compile Include="Objects\Static Objects\Spells\FireBall.cs" />
+    <Compile Include="Framework\Messenger.cs" />
+    <Compile Include="Screens\MenuScreen.cs" />
+    <Compile Include="Objects\Kinetic Objects\Game Creatures\Enemies\FastEnemy.cs" />
+    <Compile Include="Objects\Kinetic Objects\Game Creatures\Enemies\TankyEnemy.cs" />
+    <Compile Include="Objects\Kinetic Objects\Towers\SlowTower.cs" />
+    <Compile Include="Objects\Kinetic Objects\Projectiles\SlowProjectile.cs" />
+    <Compile Include="Framework\Buttons\GameButton.cs" />
+    <Compile Include="Objects\Kinetic Objects\Towers\SplashTower.cs" />
+    <Compile Include="Objects\Kinetic Objects\Projectiles\SplashProjectile.cs" />
+    <Compile Include="Framework\Buttons\ButtonEnum.cs" />
+    <Compile Include="Framework\Buttons\CircleButton.cs" />
+    <Compile Include="Objects\Static Objects\Spells\Avalanche.cs" />
+    <Compile Include="Objects\Static Objects\Spells\Root.cs" />
+    <Compile Include="Screens\SplashScreen.cs" />
+    <Compile Include="Screens\LoadScreen.cs" />
+    <Compile Include="Objects\Static Objects\Miscs\HealthBar.cs" />
+    <Compile Include="Objects\Static Objects\Player\Player.cs" />
+    <Compile Include="Screens\FunctionScreens\PauseScreen.cs" />
+    <Compile Include="Screens\FunctionScreens\BasicFunctionScreen.cs" />
+    <Compile Include="Screens\FunctionScreens\WinScreen.cs" />
+    <Compile Include="Screens\FunctionScreens\LoseScreen.cs" />
+    <Compile Include="Objects\Static Objects\Miscs\PowerBar.cs" />
+    <Compile Include="Framework\Managers\TreeManager.cs" />
+    <Compile Include="Framework\Framework Objects\QuadTreeNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ShaderProgram Include="shaders\Simple.fcg" />
+    <ShaderProgram Include="shaders\Simple.vcg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PsmMetadata Include="app.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Framework\" />
+    <Folder Include="Framework\Managers\" />
+    <Folder Include="Screens\" />
+    <Folder Include="Objects\" />
+    <Folder Include="Objects\Static Objects\" />
+    <Folder Include="Objects\Kinetic Objects\" />
+    <Folder Include="Art\" />
+    <Folder Include="Framework\EnemyWave\" />
+    <Folder Include="Maps\" />
+    <Folder Include="Objects\Kinetic Objects\Game Creatures\" />
+    <Folder Include="Objects\Kinetic Objects\Projectiles\" />
+    <Folder Include="Objects\Kinetic Objects\Game Creatures\MountainGod\" />
+    <Folder Include="Objects\Static Objects\Spells\" />
+    <Folder Include="Framework\Buttons\" />
+    <Folder Include="Font\" />
+    <Folder Include="Objects\Static Objects\Miscs\" />
+    <Folder Include="Objects\Static Objects\Player\" />
+    <Folder Include="Screens\FunctionScreens\" />
+    <Folder Include="Framework\Text\" />
+    <Folder Include="Save\" />
+    <Folder Include="Framework\AI\" />
+    <Folder Include="Framework\Framework Objects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Art\GameArt.png" />
+    <Content Include="Maps\Map0.gmf" />
+    <Content Include="Art\GameArt2.png" />
+    <Content Include="Art\GameArt3.png" />
+    <Content Include="Art\Button.png" />
+    <Content Include="Font\EarthFont.ttf" />
+    <Content Include="Art\TowerButtons.png" />
+    <Content Include="Art\CreditsScreen.png" />
+    <Content Include="Art\LevelSelectScreen.png" />
+    <Content Include="Art\LoadScreen.png" />
+    <Content Include="Art\OptionScreen.png" />
+    <Content Include="Art\SplashScreen.png" />
+    <Content Include="Maps\Map1.gmf" />
+    <Content Include="Art\Background.png" />
+  </ItemGroup>
+</Project>

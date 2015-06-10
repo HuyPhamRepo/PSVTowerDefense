@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Objects\Kinetic Objects\Game Creatures\MountainGod\MountainGod.cs">
+    <Files>
+      <File FileName="Framework\CommonHelper.cs" Line="179" Column="69" />
+      <File FileName="Objects\Kinetic Objects\Game Creatures\MountainGod\MountainGod.cs" Line="101" Column="101" />
+      <File FileName="Screens\GameScreen.cs" Line="54" Column="21" />
+      <File FileName="Objects\Static Objects\Spells\BasicSpell.cs" Line="78" Column="47" />
+      <File FileName="Objects\Static Objects\Spells\FireBall.cs" Line="13" Column="40" />
+      <File FileName="Framework\EnumClasses.cs" Line="98" Column="14" />
+      <File FileName="Objects\Kinetic Objects\Towers\BasicTower.cs" Line="64" Column="62" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Objects\Static Objects\Spells\BasicSpell.cs" line="80" offsetX="283" offsetY="1254" expression="i" liveUpdate="False" />
+    <Watch file="Objects\Static Objects\Spells\BasicSpell.cs" line="80" offsetX="279" offsetY="1305" expression="j" liveUpdate="False" />
+    <Watch file="Objects\Static Objects\Spells\BasicSpell.cs" line="83" offsetX="390" offsetY="1305" expression="a" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
